@@ -1,0 +1,6 @@
+com/anpq/spring/message/MessageRenderer.class
+com/anpq/spring/message/impl/ConfigurableMessageProvider.class
+com/anpq/spring/message/impl/StandardOutMessageRenderer.class
+com/anpq/spring/config/PropertySourcesCfg.class
+com/anpq/spring/message/MessageProvider.class
+com/anpq/spring/App.class
