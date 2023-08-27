@@ -1,20 +1,28 @@
 package com.anpq.spring;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+import com.anpq.spring.message.MessageProvider;
+import com.anpq.spring.message.MessageRenderer;
+
+public class AppTest extends TestBase {
+    @Autowired
+    MessageProvider provider;
+
+    @Autowired
+    MessageRenderer render;
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testProvider() {
+        assertNotNull(provider);
+    }
+
+    @Test
+    public void testRender() {
+        assertNotNull(render);
+        assertNotNull(render.getMessageProvider());
     }
 }

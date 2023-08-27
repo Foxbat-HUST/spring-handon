@@ -16,10 +16,13 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <spring.context.version>6.0.11</spring.context.version>
-    <slf4j.version></slf4j.version>
     <slf4j.version>2.0.7</slf4j.version>
     <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
     <logback.version>1.4.8</logback.version>
+    <mockito.version>5.5.0</mockito.version>
+    <junit.version>4.13.2</junit.version>
+    <junit-jupiter.version>5.9.3</junit-jupiter.version>
+    <spring-boot.version>3.1.1</spring-boot.version>
   </properties>
 
   <dependencies>
@@ -39,9 +42,21 @@
       <version>${logback.version}</version>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${spring.context.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit-jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit-jupiter.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
