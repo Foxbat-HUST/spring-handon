@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Value;
 
 import com.anpq.spring.message.MessageProvider;
 
-public class ConfigurableMessageProvider implements MessageProvider{
+public class TestProfileMessageProvider implements MessageProvider{
   private String message;
-  public ConfigurableMessageProvider(@Value("ConfigurableMessageProvider") String message){
+  public TestProfileMessageProvider(@Value("TestProfileMessageProvider") String message){
     this.message = message;
   }
 

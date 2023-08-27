@@ -1,5 +1,6 @@
 package com.anpq.spring;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
@@ -18,11 +19,12 @@ public class AppTest extends TestBase {
     @Test
     public void testProvider() {
         assertNotNull(provider);
+        assertEquals("test profile", provider.getMessage());
     }
 
     @Test
     public void testRender() {
         assertNotNull(render);
-        assertNotNull(render.getMessageProvider());
+        assertEquals("test profile", render.getMessageProvider().getMessage());
     }
 }
