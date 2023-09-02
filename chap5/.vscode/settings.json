@@ -5,4 +5,7 @@
     "classpath"
   ],
   "java.compile.nullAnalysis.mode": "automatic",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+}
 }
